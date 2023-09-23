@@ -10,11 +10,14 @@
 7. [Triggers and Trigger Graph](#triggers-and-trigger-graph)
 8. [Security Issues and Measures](#security-issues-and-measures)
 9. [Backup and Recovery Plan](#backup-and-recovery-plan)
+    
 
 ---
 
 ## Introduction
 This document outlines the design and management of a database system for an IT company. The goal is to create a robust and secure system that efficiently handles customers, projects, employees, user groups, roles, and departments for the company. This system will be used by approximately 50 concurrent users and must accommodate the company's 100 employees, multiple projects, various departments, and three office locations within one country.
+
+![ER Model](ER_model.png)
 
 ## Database Schema
 The database schema is based on the provided ER model and consists of the following tables:
@@ -72,7 +75,7 @@ Three useful triggers can be implemented in the database:
 
 3. **Project Audit Trigger**: Implement a trigger to audit project entries. Whenever a project is inserted, record the entry time and project duration in the Project_Audit table.
 
-![Trigger Graph](trigger_graph.png)
+
 
 ## Security Issues and Measures
 ### Security Issues
